@@ -30,7 +30,7 @@ public class TokenManager {
             }
         }
         catch(Exception e) {
-
+            System.out.println("Access Token Generation error : " + e.getMessage());
         }
         return access_token;
     }
