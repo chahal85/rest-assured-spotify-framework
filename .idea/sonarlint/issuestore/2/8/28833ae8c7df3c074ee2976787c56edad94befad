@@ -1,0 +1,8 @@
+
+Ÿ	java:S116"XRename this field "external_urls" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñõéÑùÿÿÿÿ8…„«ø‡2J$a77ebe16-8dc9-41b6-baab-ecf6edc1b072
+Ÿ	java:S116"XRename this field "primary_color" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡èæ—ûÿÿÿÿ8…„«ø‡2J$958445b7-7c95-4097-bf97-e5155e5f7472
+	java:S116"VRename this field "snapshot_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÒĞüÿÿÿÿ8…„«ø‡2J$2f46fda7-1e54-4d58-910d-021e44d3ba4e
+	java:S116K"WRename this field "display_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥¨Âßúÿÿÿÿ8†„«ø‡2J$07eb2516-8bc3-4f84-ac3c-f41eb4960522
+Ÿ	java:S116L"XRename this field "external_urls" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñõéÑùÿÿÿÿ8†„«ø‡2J$bdb54a3b-0d60-4a73-9f9a-a47d956f6620
+‹
+java:S1128"HRemove this unused import 'com.fasterxml.jackson.annotation.JsonIgnore'.(ş‘‹„8õÚé›‰2J$0501c020-749f-4a6c-9d86-38cc0d95bd2c
