@@ -12,4 +12,9 @@ public class FakerUtils {
         Faker faker = new Faker();
         return faker.rickAndMorty().quote();
     }
+
+    public static String generateRandomDate() {
+        Faker faker = new Faker();
+        return faker.date().toString();
+    }
 }
