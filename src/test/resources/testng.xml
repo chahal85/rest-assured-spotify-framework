@@ -6,5 +6,4 @@
             <class name="tests.PlaylistTests"/>
         </classes>
     </test>
-
 </suite>
