@@ -56,3 +56,6 @@ bin/
 # OS Files
 Thumbs.db
 Desktop.ini
+
+# Allure Reports
+allure-results/
