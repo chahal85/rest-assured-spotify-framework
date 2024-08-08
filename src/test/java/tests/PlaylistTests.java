@@ -35,6 +35,7 @@ public class PlaylistTests {
     void shouldBeAbleToFetchPlaylistDetails() {
         String playlistId = DataLoader.getInstance().getGetPlaylistId();
         Response response = PlaylistApi.get(playlistId);
+
     }
 
     @Test
