@@ -23,7 +23,7 @@ public class PlaylistTests {
                 .build();
 
         Response response = PlaylistApi.post(playlistPayload);
-        assertThat(response.statusCode(), equalTo(200));
+        assertThat(response.statusCode(), equalTo(201));
 
 //        Playlist playlistResponse = response.as(Playlist.class);
 //        assertThat(playlistResponse.getName(), equalTo(playlistPayload.getName()));
