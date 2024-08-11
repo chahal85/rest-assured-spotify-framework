@@ -17,7 +17,7 @@ public class RestResource {
     public static Response post(String path, String token, Object payload) {
         return given().
                     spec(getRequestSpec())
-                .filter(new AllureRestAssured())
+                    .filter(new AllureRestAssured())
                     .auth().oauth2(token)
                     .body(payload).
                 when().
@@ -31,6 +31,7 @@ public class RestResource {
         // playlist id - 0Zsna52WPx9zjKK87qrs6D
         return given().
                     spec(getRequestSpec())
+                    .filter(new AllureRestAssured())
                     .auth().oauth2(token).
                 when().
                     get(path).
@@ -42,6 +43,7 @@ public class RestResource {
     public static Response put(String path, String token, Object payload) {
         return given()
                     .spec(getRequestSpec())
+                    .filter(new AllureRestAssured())
                     .auth().oauth2(token)
                     .body(payload).
                 when().
