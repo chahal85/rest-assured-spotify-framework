@@ -4,6 +4,16 @@ plugins {
 
 // Define the version of Allure you want to use via the allureVersion property
 def allureVersion = "2.24.0"
+// Define the version of AspectJ
+def aspectJVersion = "1.9.20.1"
+
+// Define configuration for AspectJ agent
+configurations {
+    agent {
+        canBeResolved = true
+        canBeConsumed = true
+    }
+}
 
 group = 'org.example'
 version = '1.0-SNAPSHOT'
@@ -29,6 +39,12 @@ dependencies {
     // Add necessary Allure dependencies to dependencies section
     testImplementation "io.qameta.allure:allure-testng"
     implementation 'com.github.javafaker:javafaker:1.0.2'
+    // Add necessary Allure dependencies to dependencies section
+    testImplementation "io.qameta.allure:allure-rest-assured"
+
+    // Add aspectjweaver dependency
+    agent "org.aspectj:aspectjweaver:$aspectJVersion"
+
 }
 
 test {

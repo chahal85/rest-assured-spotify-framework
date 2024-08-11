@@ -2,6 +2,7 @@ package tests;
 
 import applicationApi.PlaylistApi;
 import com.spotify.pojos.Playlist;
+import io.qameta.allure.Description;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 import utils.DataLoader;
@@ -14,6 +15,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
 public class PlaylistTests {
+    @Description("user should be able to create a new playlist")
     @Test(description = "should be able to create a playlist")
     void successful_creation_of_playlist() {
         Playlist playlistPayload = Playlist.builder()

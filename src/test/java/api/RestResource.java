@@ -1,6 +1,7 @@
 package api;
 
 import com.spotify.pojos.Playlist;
+import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
@@ -16,6 +17,7 @@ public class RestResource {
     public static Response post(String path, String token, Object payload) {
         return given().
                     spec(getRequestSpec())
+                .filter(new AllureRestAssured())
                     .auth().oauth2(token)
                     .body(payload).
                 when().
